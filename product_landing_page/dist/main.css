@@ -1,7 +1,23 @@
+/*colors*/
 body {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  z-index: 1;
+}
+
+h2 {
+  text-align: center;
+  background-color: #d5d5d5;
+  padding: 5px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*colors*/
@@ -17,7 +33,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   background-color: #0F1626;
-  color: white;
+  color: #ffffff;
   padding-left: 15px;
   padding-right: 15px;
   height: 50px;
@@ -55,11 +71,11 @@ nav .nav-links {
 
 nav .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   margin-right: 70px;
 }
 
-.nav-links i:hover {
+nav .nav-links i:hover {
   color: #ff533d;
 }
 
@@ -73,9 +89,8 @@ nav .nav-links a {
   top: 50px;
 }
 
-.linkBlue {
-  text-decoration: none;
-  color: blue;
+.header_save a {
+  color: #0000EE;
 }
 
 .img_container {
@@ -92,52 +107,50 @@ nav .nav-links a {
   margin-top: 0px;
 }
 
-.img {
+.img_container .img {
   width: 50%;
   height: auto;
   padding-top: 0px;
   margin: 200px 0px 50px 0px;
 }
 
-.info_text {
+.img_container .info_text {
   margin: 150px 0px 50px 0px;
   font-size: 20px;
 }
 
-.orange_button {
-  text-decoration: none;
-  color: white;
-  background-color: #ff533d;
-  padding: 7px 15px 7px 15px;
-  border-radius: 15px;
-}
-
-.small {
+.img_container .info_text .small {
   color: #ff533d;
   font-size: 10px;
   position: relative;
   top: 20px;
 }
 
-.hero {
+.img_container .info_text .hero {
   font-size: 60px;
   line-height: 50px;
 }
 
-.info-learn {
+.img_container .info_text .orange_button {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff533d;
+  padding: 7px 15px 7px 15px;
+  border-radius: 15px;
+}
+
+.img_container .info_text .info-learn {
   font-size: 16px;
 }
 
-h2 {
-  text-align: center;
-  background-color: #d5d5d5;
-  padding: 5px;
-  margin: 0px;
+.img_container .info_text .info-learn .linkBlue {
+  text-decoration: none;
+  color: #0000EE;
 }
 
 .feature_container {
   text-align: left;
-  background-color: white;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,19 +169,19 @@ h2 {
   border: 1px solid;
 }
 
-.text {
+.feature_container .feature_container img {
+  display: inherit;
+  max-width: 400px;
+  height: auto;
+  padding: 0px 0px 0px 0px;
+}
+
+.feature_container .feature_container img .text {
   font-size: 15px;
   display: inherit;
   max-width: 400px;
   height: auto;
   padding: 0px 0px 0px 0px;
   border: 1px solid;
-}
-
-.feature_container img {
-  display: inherit;
-  max-width: 400px;
-  height: auto;
-  padding: 0px 0px 0px 0px;
 }
 /*# sourceMappingURL=main.css.map */
