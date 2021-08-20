@@ -13,34 +13,30 @@
     height: auto;
     padding-top: 0px;
     margin: 200px 0px 50px 0px;
-} 
-  .info_text {
-    margin: 150px 0px 50px 0px;
-    font-size: 20px;
-    .small {
-      color: $orange; 
-      font-size: 10px;
-      position: relative;
-      top: 20px;
-    }
-    .hero {
-      font-size: 60px;
-      line-height: 50px;
-    }
-    .orange_button {
-      text-decoration: none;
-      color: $white;
-      background-color: $orange;
-      padding: 7px 15px 7px 15px;
-      border-radius: 15px;
-    }
-    .info-learn {
-      font-size: 16px;
-      .linkBlue {
-        text-decoration: none;
-        color: $blue;
-      }
-    }
+  }
+}
+  
+.info_text {
+  margin: 150px 0px 50px 0px;
+  font-size: 20px;
+  .small {
+    color: $orange; 
+    font-size: 10px;
+    position: relative;
+    top: 20px;
+  }
+  .hero {
+    font-size: 60px;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  .info-learn {
+    font-size: 16px;
+  }
+  .linkBlue {
+    text-decoration: none;
+    color: $blue;
   }
 }
 
@@ -48,23 +44,58 @@
   text-align: left;
   background-color: $white;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: end;
   justify-content: space-evenly;
-  flex-direction: row-reverse;
-  border: 1px solid;
-  .feature_container img {
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  img {
+    display: inherit;
+    width: 800px;
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    border: 0px;
+    transform: rotateY(180deg);
+    z-index: 1;
+    position: relative;
+  }
+  .text {
+    font-size: 15px;
     display: inherit;
     max-width: 400px;
     height: auto;
-    padding: 0px 0px 0px 0px;
-    .text {
-      font-size: 15px;
-      display: inherit;
-      max-width: 400px;
-      height: auto;
-      padding: 0px 0px 0px 0px;
-      border: 1px solid;
-    }
+    padding: 0px;
+    margin: 0px;
   }
 }
+
+.pricing {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 60px;
+ align-items: flex-end;
+ text-align: center;
+ height: 545px;
+ margin: 100px 200px 100px 200px;
+  .devices {
+
+  }
+  div {
+    display: grid;
+    grid-area: auto;
+    overflow: auto;
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: $eggshell;
+  }
+      li {
+        display: grid;
+        border: 1px solid;
+        
+      }
+  }
+

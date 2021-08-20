@@ -1,21 +1,19 @@
 @import "variables";
 
-
 footer {
   display: flex;
   flex-direction: column;
   text-align: right;
-  background-color: lightgrey;
-  width: 100%;
-  padding: 5px;
-}
+  background-color: $lightgrey;
+  font-size: 15px;
+  max-width: 100%;
+  padding: 20px;
   .footer-links ul {
     padding-right: 30px;
     margin: 0px;
   }
   .footer-links li {
     margin-right: 45px;
-    list-style-type: none;
     float: right;
   }
       a {
@@ -23,8 +21,10 @@ footer {
         color: black;
       }
   .footer-copy {
-    margin-right: 60px
+    margin-top: 5px;
+    margin-right: 70px;
   }
+}
 
 
 

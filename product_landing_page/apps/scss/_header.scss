@@ -24,21 +24,22 @@ nav {
     align-items: center;
     color: $white;
   }
-  .nav-links {
-    display: inherit;
-    justify-content: end;
-    align-items: center;
-    a {
+}
+
+.nav-links {
+  display: inherit;
+  justify-content: end;
+  align-items: center;
+  a {
     text-decoration: none;
     color: $white;
     margin-right: 70px;
-}
+  }
     i:hover {
       color: $orange;
     }
-     }
-    }
-
+  }
+ 
 .header_save {
   text-align: center;
   font-size: 12px;
