@@ -4,10 +4,11 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: right;
-  background-color: $lightgrey;
+  background-color: $darkblue;
   font-size: 15px;
   max-width: 100%;
   padding: 20px;
+  color: $white;
   .footer-links ul {
     padding-right: 30px;
     margin: 0px;
@@ -18,11 +19,12 @@ footer {
   }
       a {
         text-decoration: none;
-        color: black;
+        color: $white;
       }
   .footer-copy {
     margin-top: 5px;
     margin-right: 70px;
+
   }
 }
 

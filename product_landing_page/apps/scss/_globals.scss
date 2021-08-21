@@ -4,6 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: $white;
 }
 
 header {
@@ -47,4 +48,9 @@ ul {
   background-color: $orange;
   padding: 7px 15px 7px 15px;
   border-radius: 15px;
+}
+
+.material-icons {
+  vertical-align: middle;
+  color: $orange;
 }

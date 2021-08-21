@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
 header {
@@ -45,6 +46,11 @@ ul {
   background-color: #ff533d;
   padding: 7px 15px 7px 15px;
   border-radius: 15px;
+}
+
+.material-icons {
+  vertical-align: middle;
+  color: #ff533d;
 }
 
 nav {
@@ -101,7 +107,7 @@ nav .company {
   margin-right: 70px;
 }
 
-.nav-links i:hover {
+#shopping_bag:hover {
   color: #ff533d;
 }
 
@@ -128,10 +134,11 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: right;
-  background-color: #d5d5d5;
+  background-color: #0F1626;
   font-size: 15px;
   max-width: 100%;
   padding: 20px;
+  color: #ffffff;
 }
 
 footer .footer-links ul {
@@ -146,7 +153,7 @@ footer .footer-links li {
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
 }
 
 footer .footer-copy {
@@ -166,6 +173,7 @@ footer .footer-copy {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   margin-top: 0px;
+  background-color: #ffffff;
 }
 
 .img_container .img {
@@ -237,13 +245,32 @@ footer .footer-copy {
   position: relative;
 }
 
-.feature_container .text {
-  font-size: 15px;
+.text {
+  font-size: 20px;
   display: inherit;
   max-width: 400px;
   height: auto;
   padding: 0px;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  line-height: 2;
+}
+
+.text li {
+  margin: 20px 0px 20px 0px;
 }
 
 .pricing {
@@ -280,7 +307,7 @@ footer .footer-copy {
 }
 
 .devices h4 {
-  background-color: lightgrey;
+  background-color: #d5d5d5;
   width: 100%;
   margin: 0px 0px 30px 0px;
   padding: 10px 0px 10px 0px;
