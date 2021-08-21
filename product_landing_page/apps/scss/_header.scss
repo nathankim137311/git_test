@@ -36,10 +36,6 @@ nav {
     margin-right: 70px;
   }
 }
-
-#shopping_bag:hover {
-    color: $orange;
-  }
  
 .header_save {
   text-align: center;
@@ -52,4 +48,12 @@ nav {
     a {
       color: $blue;
     }
+}
+
+#shopping_bag {
+  color: $white;
+}
+
+#shopping_bag:hover {
+  color: $orange;
 }

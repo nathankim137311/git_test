@@ -107,10 +107,6 @@ nav .company {
   margin-right: 70px;
 }
 
-#shopping_bag:hover {
-  color: #ff533d;
-}
-
 .header_save {
   text-align: center;
   font-size: 12px;
@@ -123,6 +119,14 @@ nav .company {
 
 .header_save a {
   color: #0000EE;
+}
+
+#shopping_bag {
+  color: #ffffff;
+}
+
+#shopping_bag:hover {
+  color: #ff533d;
 }
 
 footer {
@@ -213,7 +217,7 @@ footer .footer-copy {
 
 .feature_container {
   text-align: left;
-  background-color: #ffffff;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,19 +306,19 @@ footer .footer-copy {
   text-align: center;
   width: calc(100% / 3);
   margin: 20px;
-  border-radius: 3px;
+  border-radius: 4px;
   background-color: #f5f5f5;
+  -webkit-box-shadow: 10px 10px 5px #d5d5d5;
+          box-shadow: 10px 10px 5px #d5d5d5;
 }
 
-.devices h4 {
-  background-color: #d5d5d5;
-  width: 100%;
-  margin: 0px 0px 30px 0px;
-  padding: 10px 0px 10px 0px;
+.devices .prices {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .devices li {
-  line-height: 2;
+  line-height: 1;
   text-align: center;
   padding: 5px;
   margin: 0px;
@@ -322,7 +326,32 @@ footer .footer-copy {
 
 .devices a {
   position: relative;
-  top: 35px;
-  width: 35%;
+  top: 25px;
+  width: 33%;
+  text-decoration: none;
+  background-color: #ff533d;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.storage {
+  background-color: #d5d5d5;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border-top: 4px;
+}
+
+#gb_128 {
+  border-bottom: violet 10px solid;
+}
+
+#gb_500 {
+  border-bottom: teal 10px solid;
+}
+
+#tb_1 {
+  border-bottom: red 10px solid;
 }
 /*# sourceMappingURL=main.css.map */
