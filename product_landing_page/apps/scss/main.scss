@@ -66,36 +66,45 @@
     max-width: 400px;
     height: auto;
     padding: 0px;
-    margin: 0px;
+    margin-top: 50px;
   }
 }
 
 .pricing {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- column-gap: 60px;
- align-items: flex-end;
- text-align: center;
- height: 545px;
- margin: 100px 200px 100px 200px;
-  .devices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 200px 50px 200px;
+  height: 400px;
+}
 
+.devices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 20px;
+  border-radius: 3px;
+  background-color: $eggshell;
+  h4 {
+    background-color: lightgrey;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+    padding: 10px 0px 10px 0px;
   }
-  div {
-    display: grid;
-    grid-area: auto;
-    overflow: auto;
-    height: 50%;
+  li {
+    line-height: 2;
+    text-align: center;
+    padding: 5px;
     margin: 0px;
-    padding: 0px;
-    border: 1px solid;
-    border-radius: 3px;
-    background-color: $eggshell;
   }
-      li {
-        display: grid;
-        border: 1px solid;
-        
-      }
+  a {
+    position: relative;
+    top: 35px;
+    width: 35%;
   }
+}
+
+
 

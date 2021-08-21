@@ -23,6 +23,7 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   padding: 10px;
   margin: 0px;
+  font-size: 20px;
 }
 
 li {
@@ -242,40 +243,59 @@ footer .footer-copy {
   max-width: 400px;
   height: auto;
   padding: 0px;
-  margin: 0px;
+  margin-top: 50px;
 }
 
 .pricing {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -webkit-column-gap: 60px;
-          column-gap: 60px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  text-align: center;
-  height: 545px;
-  margin: 100px 200px 100px 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 200px 50px 200px;
+  height: 400px;
 }
 
-.pricing div {
-  display: -ms-grid;
-  display: grid;
-  grid-area: auto;
-  overflow: auto;
-  height: 50%;
-  margin: 0px;
-  padding: 0px;
-  border: 1px solid;
+.devices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 20px;
   border-radius: 3px;
   background-color: #f5f5f5;
 }
 
-.pricing li {
-  display: -ms-grid;
-  display: grid;
-  border: 1px solid;
+.devices h4 {
+  background-color: lightgrey;
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.devices li {
+  line-height: 2;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
+
+.devices a {
+  position: relative;
+  top: 35px;
+  width: 35%;
 }
 /*# sourceMappingURL=main.css.map */
