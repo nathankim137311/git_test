@@ -1,59 +1,40 @@
-nav {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@import "variables";
+@import "globals";
+
+
+header {
   background-color: $darkblue;
-  color: $white;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 50px;
-  width: 100%;
-  margin: 0px;
-  .logo {
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    padding: 0px 30px 0px 30px;
-  }
-  .company {
-    font-size: 0.9375rem;
-    margin: 0px;
-    padding: 0px;
-    display: inherit;
-    align-items: center;
-    color: $white;
-  }
+
 }
 
-.nav-links {
-  display: inherit;
-  justify-content: end;
-  align-items: center;
-  a {
-    text-decoration: none;
-    color: $white;
-    margin-right: 70px;
-  }
-}
- 
-.header_save {
-  text-align: center;
-  font-size: 12px;
+.container {
+  max-width: 100%;
+  width: 95%;
+  margin: 0 auto;
   padding: 5px;
-  background-color: lightgrey;
-  position: fixed;
-  width: 100%;
-  top: 50px;
-    a {
-      color: $blue;
-    }
-}
-
-#shopping_bag {
+  display: flex;
+  flex-direction: row;
+  border: red 1px solid;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
   color: $white;
 }
 
-#shopping_bag:hover {
-  color: $orange;
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+  border: red 1px solid;
+  img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 0 30px;
+  }
 }
+
