@@ -90,6 +90,7 @@ nav {
     margin: 5px 0px 0px 0px;
     h1 {
       font-size: 25px;
+      color: $orange;
     }
     img {
       display: none;
@@ -111,11 +112,10 @@ nav {
         color: $orange;
       }
   }
-
   .nav-menu li a {
     text-align: center;
     display: block;
-    width: 500px;
+    width: 90%;
     padding: 5px 0px 5px 0px;
   }
   .header-save  {
