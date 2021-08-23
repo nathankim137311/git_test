@@ -102,6 +102,7 @@ header {
   background-color: #0F1626;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .header-save {
@@ -189,6 +190,9 @@ nav a {
 }
 
 @media (max-width: 480px) {
+  header {
+    position: initial;
+  }
   .logo {
     padding: 0px 50px;
     margin: 5px 0px 0px 0px;
@@ -221,7 +225,7 @@ nav a {
   .nav-menu a:hover {
     color: #ff533d;
   }
-  li a {
+  .nav-menu li a {
     text-align: center;
     display: block;
     width: 500px;
@@ -236,36 +240,84 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0px;
+  background-color: #0F1626;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: right;
-  background-color: #0F1626;
-  font-size: 15px;
-  max-width: 100%;
-  padding: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 10px;
+  margin-right: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #ffffff;
 }
 
-footer .footer-links ul {
-  padding-right: 30px;
-  margin: 0px;
+.footer-links {
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-footer .footer-links li {
-  margin-right: 45px;
-  float: right;
+.footer-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -17px;
 }
 
-footer a {
-  text-decoration: none;
+.footer-links ul li {
+  margin: 0 10px;
+}
+
+.footer-links ul li a {
   color: #ffffff;
 }
 
-footer .footer-copy {
+.footer-copy {
+  padding: 5px;
   margin-top: 5px;
-  margin-right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 480px) {
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-container {
+    margin: 0px;
+  }
 }
 
 .img_container {
@@ -348,7 +400,7 @@ footer .footer-copy {
   border: 0px;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  z-index: 1;
+  z-index: 0;
   position: relative;
 }
 

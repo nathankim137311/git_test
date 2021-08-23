@@ -8,6 +8,7 @@ header {
   background-color: $darkblue;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 //*college students save more bar*//
@@ -81,6 +82,9 @@ nav {
 //*media queries*//
 
 @media (max-width: 480px) {
+  header {
+    position: initial;
+  }
   .logo {
     padding: 0px 50px;
     margin: 5px 0px 0px 0px;
@@ -107,7 +111,8 @@ nav {
         color: $orange;
       }
   }
-  li a {
+
+  .nav-menu li a {
     text-align: center;
     display: block;
     width: 500px;
