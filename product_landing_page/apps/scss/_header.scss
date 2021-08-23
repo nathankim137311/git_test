@@ -2,10 +2,50 @@
 @import "globals";
 
 
+//*entire navigation bar*//
+
 header {
   background-color: $darkblue;
-
+  position: fixed;
+  width: 100%;
 }
+
+//*college students save more bar*//
+
+.header-save {
+  display: block;
+  background-color: $lightgrey;
+  text-align: center;
+  font-size: 0.9375rem;
+}
+
+//*holds nav links*//
+
+nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+  }
+    li {
+      margin: 0 30px;
+    }
+      a {
+        color: $white;
+      }
+}
+//*shopping bag icon*//
+
+#shopping_bag {
+  color: white;
+}
+
+#shopping_bag:hover {
+  color: $orange;
+}
+
+//*container which holds nav and logo*//
 
 .container {
   max-width: 100%;
@@ -14,27 +54,67 @@ header {
   padding: 5px;
   display: flex;
   flex-direction: row;
-  border: red 1px solid;
   align-items: center;
   justify-content: space-between;
   white-space: nowrap;
   color: $white;
 }
 
+//*company logo and name*//
+
 .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 5px;
-  border: red 1px solid;
+  margin: 5px 5px 5px 15px;
   img {
-    width: 40px;
+    width: 30px;
     height: auto;
     border-radius: 50%;
   }
   h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0 30px;
+  }
+}
+
+//*media queries*//
+
+@media (max-width: 480px) {
+  .logo {
+    padding: 0px 50px;
+    margin: 5px 0px 0px 0px;
+    h1 {
+      font-size: 25px;
+    }
+    img {
+      display: none;
+    }
+  }
+  .container {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+    margin: 0px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    a {
+      font-size: 20px;
+    }
+      a:hover {
+        color: $orange;
+      }
+  }
+  li a {
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 5px 0px 5px 0px;
+  }
+  .header-save  {
+    display: none;
   }
 }
 

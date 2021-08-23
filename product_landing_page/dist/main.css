@@ -100,6 +100,45 @@ ul {
 
 header {
   background-color: #0F1626;
+  position: fixed;
+  width: 100%;
+}
+
+.header-save {
+  display: block;
+  background-color: #d5d5d5;
+  text-align: center;
+  font-size: 0.9375rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav li {
+  margin: 0 30px;
+}
+
+nav a {
+  color: #ffffff;
+}
+
+#shopping_bag {
+  color: white;
+}
+
+#shopping_bag:hover {
+  color: #ff533d;
 }
 
 .container {
@@ -114,7 +153,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: red 1px solid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -136,19 +174,62 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5px;
-  border: red 1px solid;
+  margin: 5px 5px 5px 15px;
 }
 
 .logo img {
-  width: 40px;
+  width: 30px;
   height: auto;
   border-radius: 50%;
 }
 
 .logo h1 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0 30px;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    padding: 0px 50px;
+    margin: 5px 0px 0px 0px;
+  }
+  .logo h1 {
+    font-size: 25px;
+  }
+  .logo img {
+    display: none;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav {
+    width: 100%;
+    margin: 0px;
+  }
+  .nav-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-menu a {
+    font-size: 20px;
+  }
+  .nav-menu a:hover {
+    color: #ff533d;
+  }
+  li a {
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 5px 0px 5px 0px;
+  }
+  .header-save {
+    display: none;
+  }
 }
 
 footer {
